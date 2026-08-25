@@ -11,7 +11,7 @@
 			<a href="/">Aditya Sawant</a>
 		</div>
 		<nav>
-			{#each links as link}
+			{#each links as link (link.href)}
 				<a href={link.href} class="header__link">
 					{link.name}
 				</a>

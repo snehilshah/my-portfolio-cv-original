@@ -134,8 +134,8 @@
 						streamlined organization and collaboration.
 					</li>
 					<li>
-						Overcame <b>NLP implementation</b> challenges through research, framework selection, and
-						iterative improvement.
+						Overcame <b>NLP implementation</b> challenges through research, framework selection, and iterative
+						improvement.
 					</li>
 					<li>
 						Delivered robust task management system with intuitive interfaces, collaboration
@@ -148,7 +148,9 @@
 	</div>
 </div>
 
-<style lang="postcss">
+<style>
+	@reference "../../app.css";
+
 	.resume-section h2 {
 		@apply font-serif text-2xl border-b-[1px] text-black dark:text-white;
 	}

@@ -1,9 +1,9 @@
 <script>
-	export let posts;
+	let { posts = [] } = $props();
 </script>
 
 <div class="post__list">
-	{#each posts as post}
+	{#each posts as post (post.id ?? post.title)}
 		<div>
 			<div class="post__list__d1">
 				<h2 class="post__heading">

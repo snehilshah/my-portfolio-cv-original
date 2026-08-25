@@ -58,11 +58,11 @@
 	<section>
 		<h2 class="mb-6">My notable projects:</h2>
 		<div class="project__grid">
-			{#each projects as project}
+			{#each projects as project (project.name)}
 				<a href={project.href} class="project__link">
 					<div class="flex flex-col gap-y-2">
 						<h3 class="project__heading">{project.name}</h3>
-						<p clas="project__desc">{project.desc}</p>
+						<p class="project__desc">{project.desc}</p>
 					</div>
 					<div class="flex flex-row-reverse justify-between">
 						{#if project.github}
@@ -76,7 +76,7 @@
 							/>
 						{/if}
 						<div class="flex gap-2">
-							{#each project.tool_icons as icon}
+							{#each project.tool_icons as icon (icon)}
 								<Icon {icon} width="18" height="18" class="block mt-4 text-neutral-400" />
 							{/each}
 						</div>
